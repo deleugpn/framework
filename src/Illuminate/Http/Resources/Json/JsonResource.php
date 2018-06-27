@@ -49,10 +49,10 @@ class JsonResource implements ArrayAccess, JsonSerializable, Responsable, UrlRou
     /**
      * Create a new resource instance.
      *
-     * @param  mixed  $resource
+     * @param  Arrayable  $resource
      * @return void
      */
-    public function __construct($resource)
+    public function __construct(Arrayable $resource)
     {
         $this->resource = $resource;
     }
